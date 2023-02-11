@@ -1,0 +1,59 @@
+.main-logo {
+  display: block;
+  margin-left: 20px;
+  padding: 12px 0;
+  padding-bottom: 10px;
+  margin-right: 48px;
+
+  @media (min-width: $medium-width) {
+    padding: 22px 0;
+    padding-bottom: 10px;
+    margin-right: 40px;
+  }
+
+  @media (min-width: $large-width) {
+    width: 350px;
+    margin-left: 40px;
+    margin-right: 130px;
+    padding: 20px 0;
+    padding-bottom: 10px;
+  }
+}
+
+.main-logo__icon {
+  display: flex;
+  gap: 20px;
+
+  padding-right: 10px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  color: $black-color;
+
+  @media (min-width: $medium-width) {
+    width: 100px;
+  }
+}
+
+.main-logo__icon-image {
+  @media (min-width: $medium-width) {
+    width: 80px;
+    height: 36px;
+  }
+
+  @media (min-width: $large-width) {
+    min-width: 170px;
+    height: 40px;
+  }
+}
+
+.main-logo__text {
+  display: none;
+
+  @media (min-width: $large-width) {
+    display: block;
+    min-width: 130px;
+    margin: 0;
+    padding-top: 3px;
+  }
+}

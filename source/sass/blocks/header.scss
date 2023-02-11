@@ -1,0 +1,19 @@
+.main-header {
+  background-color: $white-color;
+  color: $black-color;
+
+  @media (min-width: $medium-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.main-header__wrapper {
+  @media (max-width: $small-width-only) {
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+}

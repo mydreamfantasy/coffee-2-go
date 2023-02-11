@@ -1,0 +1,13 @@
+.page-body {
+  min-height: 100%;
+  max-width: 100vw;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
