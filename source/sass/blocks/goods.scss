@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
-    margin-bottom: 72px;
+    margin-bottom: 62px;
   }
 
   @media (min-width: $large-width) {
@@ -31,7 +31,11 @@
   margin-bottom: 24px;
 
   @media (min-width: $medium-width) {
-    margin-bottom: 30px;
+    margin-bottom: 34px;
+  }
+
+  @media (min-width: $large-width) {
+    margin-bottom: 33px;
   }
 }
 
@@ -47,6 +51,11 @@
     line-height: 36px;
     margin-bottom: 10px;
   }
+}
+
+.goods__link {
+  display: block;
+  color: $black-color;
 }
 
 .goods__text {

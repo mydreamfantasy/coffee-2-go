@@ -1,0 +1,21 @@
+.footer-copyright {
+  text-align: center;
+}
+
+.footer-copyright__link {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: $button-disabled;
+}
+
+.footer-copyright__logo {
+  position: relative;
+  top: 4px;
+  padding-top: 15px;
+
+  @media (min-width: $large-width) {
+    padding-top: 4px;
+  }
+}
