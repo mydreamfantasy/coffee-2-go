@@ -286,6 +286,410 @@
           </li>
         </ul>
       </section>
+      <section class="catalog">
+        <h3 class="catalog__catalog">Каталог</h3>
+        <h2 class="catalog__title">Каталог кофейных напитков</h2>
+        <div class="catalog__container">
+          <div
+            class="catalog__filters catalog__filters-container catalog__container-filters"
+          >
+            <form
+              class="catalog__filters-form"
+              action="https://echo.htmlacademy.ru/"
+              method="get"
+            >
+              <div class="catalog__filters-container-fields">
+                <fieldset class="catalog__filters-group">
+                  <legend class="catalog__filters-title">Цена</legend>
+
+                  <div class="catalog__range">
+                    <div class="catalog__range-scale">
+                      <div class="catalog__range-bar">
+                        <button
+                          class="catalog__range-toggle catalog__toggle-min"
+                        >
+                          <span class="visually-hidden"
+                            >Изменить минимальную цену.</span
+                          >
+                        </button>
+                        <button
+                          class="catalog__range-toggle catalog__toggle-max"
+                        >
+                          <span class="visually-hidden"
+                            >Изменить максимальную цену.</span
+                          >
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="catalog__range-wrapper-inputs">
+                      <div class="catalog__price-wrapper">
+                        <label
+                          class="catalog__filters-label visually-hidden"
+                          for="min-price"
+                          >от</label
+                        >
+                        <input
+                          class="catalog__range-input"
+                          type="number"
+                          value="0"
+                          name="min-price"
+                          id="min-price"
+                        />
+                      </div>
+
+                      <div class="catalog__price-wrapper">
+                        <label
+                          class="catalog__filters-label visually-hidden"
+                          for="max-price"
+                          >до</label
+                        >
+                        <input
+                          class="catalog__range-input catalog__range-input--max"
+                          type="number"
+                          value="900"
+                          name="max-price"
+                          id="max-price"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset class="catalog__filters-group">
+                  <legend class="catalog__filters-title">Наличие молока</legend>
+                  <ul class="catalog__filters-list reset-list">
+                    <li class="catalog__filters-item reset-item">
+                      <label class="catalog__control">
+                        <input
+                          class="catalog__control-input visually-hidden"
+                          type="radio"
+                          name="milk-group"
+                          value="true"
+                          checked
+                        /><span class="catalog__control-mark"></span>
+                        <span
+                          class="catalog__control-radio catalog__control-nomatter"
+                          >Неважно</span
+                        >
+                      </label>
+                    </li>
+                    <li class="catalog__filters-item reset-item">
+                      <label class="catalog__control">
+                        <input
+                          class="catalog__control-input visually-hidden"
+                          type="radio"
+                          name="milk-group"
+                          value="true"
+                        /><span class="catalog__control-mark"></span>
+                        <span
+                          class="catalog__control-radio catalog__control-animal"
+                          >Только животное</span
+                        >
+                      </label>
+                    </li>
+                    <li class="catalog__filter-item reset-item">
+                      <label class="catalog__control">
+                        <input
+                          class="catalog__control-input visually-hidden"
+                          type="radio"
+                          name="milk-group"
+                          value="true"
+                        /><span class="catalog__control-mark"></span>
+                        <span
+                          class="catalog__control-radio catalog__control-plant"
+                          >Только растительное</span
+                        >
+                      </label>
+                    </li>
+                    <li class="catalog__filter-item">
+                      <label class="catalog__control">
+                        <input
+                          class="catalog__control-input visually-hidden"
+                          type="radio"
+                          name="milk-group"
+                          value="true"
+                          disabled
+                        /><span class="catalog__control-mark"></span>
+                        <span class="catalog__control-radio catalog__control-no"
+                          >Без молока</span
+                        >
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <fieldset class="catalog__filters-group">
+                  <legend class="catalog__filters-title">
+                    Страна произрастания
+                  </legend>
+                  <ul class="catalog__filters-list reset-list">
+                    <li
+                      class="catalog__filters-item catalog__filters-item--country reset-item"
+                    >
+                      <label class="catalog__filters-control">
+                        <input
+                          class="catalog__filters-control-input visually-hidden"
+                          type="checkbox"
+                          name="brazil"
+                          checked
+                        />
+                        <span class="catalog__filters-control-mark"></span>
+                        <span class="catalog__filters-control-country"
+                          >Бразилия</span
+                        >
+                      </label>
+                    </li>
+                    <li
+                      class="catalog__filters-item catalog__filters-item--country reset-item"
+                    >
+                      <label class="catalog__filters-control">
+                        <input
+                          class="catalog__filters-control-input visually-hidden"
+                          type="checkbox"
+                          name="ephiopia"
+                        />
+                        <span class="catalog__filters-control-mark"></span>
+                        <span class="catalog__filters-control-country"
+                          >Эфиопия</span
+                        >
+                      </label>
+                    </li>
+                    <li
+                      class="catalog__filters-item catalog__filters-item--country reset-item"
+                    >
+                      <label class="catalog__filters-control">
+                        <input
+                          class="catalog__filters-control-input visually-hidden"
+                          type="checkbox"
+                          name="colombo"
+                        />
+                        <span class="catalog__filters-control-mark"></span>
+                        <span class="catalog__filters-control-country"
+                          >Колумбия</span
+                        >
+                      </label>
+                    </li>
+                    <li
+                      class="catalog__filters-item catalog__filters-item--country reset-item"
+                    >
+                      <label class="catalog__filters-control">
+                        <input
+                          class="catalog__filters-control-input visually-hidden"
+                          type="checkbox"
+                          name="costa"
+                        />
+                        <span class="catalog__filters-control-mark"></span>
+                        <span class="catalog__filters-control-country"
+                          >Коста-Рика</span
+                        >
+                      </label>
+                    </li>
+                    <li
+                      class="catalog__filters-item catalog__filters-item--country reset-item"
+                    >
+                      <label class="catalog__filters-control">
+                        <input
+                          class="catalog__filters-control-input visually-hidden"
+                          type="checkbox"
+                          name="peru"
+                          disabled
+                        />
+                        <span class="catalog__filters-control-mark"></span>
+                        <span class="catalog__filters-control-country"
+                          >Перу</span
+                        >
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
+
+              <div class="catalog__filters-button-container">
+                <button class="button catalog__filters-button" type="submit">
+                  <span class="catalog__filters-button-text"
+                    >Применить фильтр</span
+                  >
+                </button>
+                <button class="button catalog__filters-button" type="submit">
+                  <span
+                    class="catalog__filters-button-text catalog__filters-button-text--reset"
+                    >Сбросить фильтр</span
+                  >
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="catalog-sorting sorting catalog__container-sorting">
+            <h2 class="sorting__title">Сортировка:</h2>
+            <select class="sorting__select-control" aria-label="Сортировка">
+              <option value="popular">по умолчанию</option>
+              <option value="cheap">сначала дорогие</option>
+              <option value="expensive">сначала дешёвые</option>
+              <option value="expensive">высокий рейтинг</option>
+            </select>
+          </div>
+          <div class="catalog__goods goods catalog__container-goods">
+            <ul class="goods__list reset-list">
+              <li class="goods__item reset-item">
+                <img
+                  src="./img/catalog/mobile-1.png"
+                  alt="Флет Уайт"
+                  class="goods__image"
+                  srcset="img/catalog/mobile-1@2x.png 2x"
+                  height="188"
+                  width="130"
+                />
+                <h4 class="goods__title">Декаф Флэт Уайт</h4>
+                <p class="goods__text">
+                  Кофе без кофеина из Эфиопии <br />
+                  с натуральным фермерским молоком
+                </p>
+                <div class="goods__container">
+                  <span class="goods__price">225₽</span>
+                  <button class="goods__button button" type="button">
+                    В корзину
+                  </button>
+                </div>
+              </li>
+              <li class="goods__item reset-item">
+                <img
+                  src="./img/catalog/mobile-2.png"
+                  alt="Флет Уайт"
+                  class="goods__image"
+                  srcset="img/catalog/mobile-2@2x.png 2x"
+                  height="188"
+                  width="130"
+                />
+                <h4 class="goods__title">Декаф Флэт Уайт</h4>
+                <p class="goods__text">
+                  Кофе без кофеина из Эфиопии <br />
+                  с натуральным фермерским молоком
+                </p>
+                <div class="goods__container">
+                  <span class="goods__price">225₽</span>
+                  <button class="goods__button button" type="button">
+                    В корзину
+                  </button>
+                </div>
+              </li>
+              <li class="goods__item reset-item">
+                <img
+                  src="./img/catalog/mobile-3.png"
+                  alt="Флет Уайт"
+                  class="goods__image"
+                  srcset="img/catalog/mobile-3@2x.png 2x"
+                  height="188"
+                  width="130"
+                />
+                <h4 class="goods__title">Декаф Флэт Уайт</h4>
+                <p class="goods__text">
+                  Кофе без кофеина из Эфиопии <br />
+                  с натуральным фермерским молоком
+                </p>
+                <div class="goods__container">
+                  <span class="goods__price">225₽</span>
+                  <button class="goods__button button" type="button">
+                    В корзину
+                  </button>
+                </div>
+              </li>
+              <li class="goods__item reset-item">
+                <img
+                  src="./img/catalog/mobile-4.png"
+                  alt="Флет Уайт"
+                  class="goods__image"
+                  srcset="img/catalog/mobile-4@2x.png 2x"
+                  height="188"
+                  width="130"
+                />
+                <h4 class="goods__title">Декаф Флэт Уайт</h4>
+                <p class="goods__text">
+                  Кофе без кофеина из Эфиопии <br />
+                  с натуральным фермерским молоком
+                </p>
+                <div class="goods__container">
+                  <span class="goods__price">225₽</span>
+                  <button class="goods__button button" type="button">
+                    В корзину
+                  </button>
+                </div>
+              </li>
+              <li class="goods__item reset-item">
+                <img
+                  src="./img/catalog/mobile-5.png"
+                  alt="Флет Уайт"
+                  class="goods__image"
+                  srcset="img/catalog/mobile-5@2x.png 2x"
+                  height="188"
+                  width="130"
+                />
+                <h4 class="goods__title">Декаф Флэт Уайт</h4>
+                <p class="goods__text">
+                  Кофе без кофеина из Эфиопии <br />
+                  с натуральным фермерским молоком
+                </p>
+                <div class="goods__container">
+                  <span class="goods__price">225₽</span>
+                  <button class="goods__button button" type="button">
+                    В корзину
+                  </button>
+                </div>
+              </li>
+              <li class="goods__item reset-item">
+                <img
+                  src="./img/catalog/mobile-6.png"
+                  alt="Флет Уайт"
+                  class="goods__image"
+                  srcset="img/catalog/mobile-6@2x.png 2x"
+                  height="188"
+                  width="130"
+                />
+                <h4 class="goods__title">Декаф Флэт Уайт</h4>
+                <p class="goods__text">
+                  Кофе без кофеина из Эфиопии <br />
+                  с натуральным фермерским молоком
+                </p>
+                <div class="goods__container">
+                  <span class="goods__price">225₽</span>
+                  <button class="goods__button button" type="button">
+                    В корзину
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="catalog__pagination pagination catalog__container-pagination"
+          >
+            <ul class="pagination__list reset-list">
+              <li class="pagination__item reset-item">
+                <a class="pagination__link pagination__prev">
+                  <span class="pagination__link-text">Назад</span>
+                </a>
+              </li>
+              <li class="pagination__item reset-item">
+                <a class="pagination__link" href="#">
+                  <span class="pagination__link-number">1</span>
+                </a>
+              </li>
+              <li class="pagination__item reset-item">
+                <a class="pagination__link pagination__current"
+                  ><span class="pagination__link-number">2</span></a
+                >
+              </li>
+              <li class="pagination__item reset-item">
+                <a class="pagination__link" href="#"
+                  ><span class="pagination__link-number">3</span></a
+                >
+              </li>
+              <li class="pagination__item reset-item">
+                <a class="pagination__link pagination__next" href="#">
+                  <span class="pagination__link-text">Вперёд</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>Футер</footer>
     <script src="./js/script.js"></script>
