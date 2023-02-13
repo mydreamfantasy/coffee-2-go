@@ -69,16 +69,14 @@
           <li class="main-navigation__item reset-item">
             <a class="main-navigation__link" href="delivery.html">Доставка</a>
           </li>
-
           <li class="main-navigation__item reset-item">
             <a class="main-navigation__link" href="about.html">О нас</a>
           </li>
         </ul>
-        <div class="main-user-cart main-user-cart__container">
+        <div class="main-user-cart">
           <div class="main-user-cart__block">
             <a href="/user" class="main-user-cart__link">
               <svg
-                alt="Иконка пользователя"
                 class="main-user-cart__logo main-user-cart__logo--user"
                 width="16"
                 height="16"
@@ -97,7 +95,6 @@
           <div class="main-user-cart__block">
             <a href="/user" class="main-user-cart__link">
               <svg
-                alt="Иконка корзины"
                 class="main-user-cart__logo main-user-cart__logo--cart"
                 width="16"
                 height="16"
@@ -155,7 +152,7 @@
             </p>
             <div class="main-news__container">
               <p class="main-news__price">295₽</p>
-              <p class="main-news__price mein-news__price--after">225₽</p>
+              <p class="main-news__price main-news__price--after">225₽</p>
               <a href="#" class="main-news__button">Заказать</a>
             </div>
           </li>
@@ -192,7 +189,7 @@
             </p>
             <div class="main-news__container">
               <p class="main-news__price">285₽</p>
-              <p class="main-news__price mein-news__price--after">265₽</p>
+              <p class="main-news__price main-news__price--after">265₽</p>
               <a href="#" class="main-news__button">Заказать</a>
             </div>
           </li>
@@ -229,65 +226,68 @@
             </p>
             <div class="main-news__container">
               <p class="main-news__price">395₽</p>
-              <p class="main-news__price mein-news__price--after">375₽</p>
+              <p class="main-news__price main-news__price--after">375₽</p>
               <a href="#" class="main-news__button">Заказать</a>
             </div>
           </li>
         </ul>
-        <div class="slider__arrows">
+        <div class="slider new-toggle">
           <button
-            class="new__toggle-previous toggle-previous slider__toggle-previous button"
+            class="new-toggle__previous toggle-previous slider__toggle-previous button"
             type="button"
           >
             <span class="visually-hidden">Предыдущий слайд.</span>
             <span class="toggle-previous__marker"></span>
           </button>
           <button
-            class="new__toggle-next toggle-next slider__toggle-next button"
+            class="new-toggle__next toggle-next slider__toggle-next button"
             type="button"
           >
             <span class="visually-hidden">Следующий слайд.</span>
             <span class="toggle-next__marker"></span>
           </button>
         </div>
-        <div class="slider__toggles">
-          <button class="slider__toggle slider__toggle--current" type="button">
+        <div class="slider-pagination">
+          <button
+            class="slider-pagination__toggle slider-pagination__toggle--current"
+            type="button"
+          >
             <span class="visually-hidden">Кнопка показа слайда.</span>
           </button>
-          <button class="slider__toggle" type="button">
+          <button class="slider-pagination__toggle" type="button">
             <span class="visually-hidden">Кнопка показа слайда.</span>
           </button>
-          <button class="slider__toggle" type="button">
+          <button class="slider-pagination__toggle" type="button">
             <span class="visually-hidden">Кнопка показа слайда.</span>
           </button>
         </div>
       </section>
       <section class="features">
-        <h3 class="features__features">Преимущества</h3>
+        <p class="features__badge">Преимущества</p>
         <h2 class="features__title">Главные причины выбрать Drink2Go</h2>
         <ul class="features__list reset-list">
           <li class="features__item reset-item">
-            <h4 class="feature__item-title features__text-clock">Скорость</h4>
+            <h4 class="features__item-title features__text-clock">Скорость</h4>
             <p class="features__text">
               Готовый напиток всегда под рукой — просто открой банку
             </p>
           </li>
           <li class="features__item reset-item">
-            <h4 class="feature__item-title features__text-pocket">Удобство</h4>
+            <h4 class="features__item-title features__text-pocket">Удобство</h4>
             <p class="features__text">
               Легко помещается и в карман, <br />
               и в маленькую сумочку
             </p>
           </li>
           <li class="features__item reset-item">
-            <h4 class="feature__item-title features__text-flash">Бодрость</h4>
+            <h4 class="features__item-title features__text-flash">Бодрость</h4>
             <p class="features__text">
               Сбалансированная доза <br class="feature__wrap" />
               кофеина даст мощный заряд энергии
             </p>
           </li>
           <li class="features__item reset-item">
-            <h4 class="feature__item-title features__text-leaf">
+            <h4 class="features__item-title features__text-leaf">
               Экологичность
             </h4>
             <p class="features__text">
@@ -298,7 +298,7 @@
         </ul>
       </section>
       <section class="catalog">
-        <h3 class="catalog__catalog">Каталог</h3>
+        <p class="catalog__badge">Каталог</p>
         <h2 class="catalog__title">Каталог кофейных напитков</h2>
         <div class="catalog__container">
           <div
@@ -850,7 +850,7 @@
                 </p>
               </address>
               <div class="footer-contacts__tel">
-                <a class="footer-contact__phone" href="tel:+79999999999"
+                <a class="footer-contacts__phone" href="tel:+79999999999"
                   >+7 (999) 999-99-99</a
                 >
               </div>

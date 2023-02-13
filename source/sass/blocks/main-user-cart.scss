@@ -12,7 +12,7 @@
   @media (min-width: $medium-width) {
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: start;
     margin-right: 18px;
   }
 
@@ -21,9 +21,6 @@
     margin-right: 39px;
   }
 }
-
-// .main-user-cart-container {
-// }
 
 .main-user-cart__block {
   padding: 20px 22px;
