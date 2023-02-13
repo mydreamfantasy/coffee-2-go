@@ -8,7 +8,6 @@ import autoprefixer from "autoprefixer";
 import csso from "postcss-csso";
 import terser from "gulp-terser";
 import svgo from "gulp-svgmin";
-import { stacksvg } from "gulp-stacksvg";
 import { deleteAsync } from "del";
 import browser from "browser-sync";
 import bemlinter from "gulp-html-bemlinter";
@@ -60,17 +59,9 @@ export function optimizeImages() {
 
 export function optimizeVector() {
   return gulp
-    .src(["source/img/**/*.svg", "!source/img/**/*.svg"])
+    .src(["source/img/**/*.svg"])
     .pipe(svgo())
     .pipe(gulp.dest("build/img"));
-}
-
-export function createStack() {
-  return gulp
-    .src("source/img/icons/**/*.svg")
-    .pipe(svgo())
-    .pipe(stacksvg())
-    .pipe(gulp.dest("build/img/icons"));
 }
 
 export function copyAssets() {
@@ -110,7 +101,6 @@ function compileProject(done) {
     processStyles,
     processScripts,
     optimizeVector,
-    createStack,
     copyAssets,
     optimizeImages
   )(done);
