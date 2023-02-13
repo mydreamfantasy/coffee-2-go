@@ -41,7 +41,7 @@
   font-size: 14px;
   line-height: 20px;
   font-style: normal;
-  background-image: url("../img/footer/address.svg");
+  background-image: url("../../img/footer/address.svg");
   background-position: 20px 12px;
   background-repeat: no-repeat;
 
@@ -66,9 +66,18 @@
   line-height: 20px;
   color: $black-color;
   text-transform: uppercase;
-  background-image: url("../img/footer/phone.svg");
+  background-image: url("../../img/footer/phone.svg");
   background-position: 20px 12px;
   background-repeat: no-repeat;
+
+  &:hover,
+  &:focus {
+    color: $menu-color;
+  }
+
+  &:active {
+    color: $button-active;
+  }
 
   @media (min-width: $medium-width) {
     padding-left: 19px;

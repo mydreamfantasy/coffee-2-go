@@ -40,6 +40,15 @@
   text-transform: uppercase;
   color: $black-color;
 
+  &:hover,
+  &:focus {
+    color: $menu-color;
+  }
+
+  &:active {
+    color: $button-active;
+  }
+
   @media (min-width: $large-width) {
     padding-left: 30px;
   }

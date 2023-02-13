@@ -14,11 +14,13 @@
     display: flex;
     align-items: start;
     margin-right: 18px;
+    margin-top: 10px;
   }
 
   @media (min-width: $large-width) {
     gap: 22px;
     margin-right: 39px;
+    margin-top: 0;
   }
 }
 

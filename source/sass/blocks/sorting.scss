@@ -32,7 +32,7 @@
   color: $menu-color;
   background-color: inherit;
   appearance: none;
-  background-image: url("../img/sort-arrow.svg");
+  background-image: url("../../img/sort-arrow.svg");
   background-repeat: no-repeat;
   background-position: 139px 14px;
 
@@ -43,6 +43,6 @@
   }
 
   &:active {
-    background-image: url("../img/sort-arrow-active.svg");
+    background-image: url("../../img/sort-arrow-active.svg");
   }
 }

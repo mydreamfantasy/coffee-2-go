@@ -15,4 +15,20 @@
 .social__link {
   display: block;
   padding: 10px;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    background-color: $sort-hover;
+  }
+
+  &:active {
+    background-color: rgba(120, 89, 207, 0.25);
+  }
+
+  &:hover .social__link-icon path,
+  &:focus .social__link-icon path,
+  &:active .social__link-icon path {
+    fill: $menu-color;
+  }
 }

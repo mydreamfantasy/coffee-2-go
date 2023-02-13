@@ -11,6 +11,8 @@
     "gulp-dart-sass": "^1.0.2",
     "gulp-html-bemlinter": "2.1.2",
     "gulp-if": "3.0.0",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-libsquoosh": "1.1.2",
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "9.0.1",
     "gulp-sass": "5.1.0",
@@ -32,7 +34,7 @@
     "w3c": "gulp validateMarkup --silent",
     "bemlinter": "gulp lintBem --silent",
     "lint": "npm run editorconfig && npm run stylelint && npm run w3c && npm run bemlinter",
-    "start": "gulp",
+    "start": "gulp runDev",
     "build": "gulp buildProd",
     "preview": "gulp buildProd && gulp startServer"
   },

@@ -5,6 +5,19 @@
     display: block;
     color: $menu-color;
     padding-top: 9px;
+
+    &:hover,
+    &:focus {
+      color: $white-color;
+    }
+
+    &:active {
+      color: $white-color;
+    }
+
+    &:disabled {
+      color: $black-color;
+    }
   }
 }
 
@@ -29,11 +42,27 @@
   background-color: $white-color;
   color: $menu-color;
   border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    background-color: $button-hover;
+    color: $white-color;
+  }
+
+  &:active {
+    background-color: $button-active;
+    color: $white-color;
+  }
+
+  &:disabled {
+    background-color: $button-disabled;
+    color: $black-color;
+  }
 }
 
 .pagination__prev {
   @media (max-width: $small-width-only) {
-    background-image: url("../img/catalog/arrow-pagination.svg");
+    background-image: url("../../img/catalog/arrow-pagination.svg");
     background-repeat: no-repeat;
     background-position: 16px 16px;
   }
@@ -63,7 +92,7 @@
 
 .pagination__next {
   @media (max-width: $small-width-only) {
-    background-image: url("../img/catalog/arrow-pagination.svg");
+    background-image: url("../../img/catalog/arrow-pagination.svg");
     background-repeat: no-repeat;
     background-position: 16px 16px;
     transform: rotate(180deg);
