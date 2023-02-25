@@ -6,3 +6,5 @@
 4. Для проверки на ошибки запустить `npm run lint`
 
 Работа выполнена за 19ч
+
+Посмотреть [здесь](https://coffee-2-h4k9euns9-mydreamfantasy.vercel.app/)
